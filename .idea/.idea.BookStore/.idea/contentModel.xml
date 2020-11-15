@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\User\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\User\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_BookStore.-396958008.00" t="ExcludeRecursive" />
+    <e p="C:\Users\User\AppData\Roaming\JetBrains\Rider2020.2\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\User\RiderProjects\BookStore" t="IncludeFlat">
+      <e p="BooksStore.Model" t="IncludeRecursive">
+        <e p="Author.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Book.cs" t="Include" />
+        <e p="BooksStore.Model.csproj" t="IncludeRecursive" />
+        <e p="Category.cs" t="Include" />
+        <e p="Class1.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="BooksStore.Model.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Order.cs" t="Include" />
+        <e p="OrderItem.cs" t="Include" />
+        <e p="OrderStatus.cs" t="Include" />
+        <e p="User.cs" t="Include" />
+      </e>
+      <e p="BookStore.Api" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BookStore.Api.csproj" t="IncludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="BookStore.Api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
+      <e p="BookStore.Service" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BookStore.Service.csproj" t="IncludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="BookStore.Service.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="AuthorService" t="Include">
+            <e p="IAuthorService.cs" t="Include" />
+          </e>
+          <e p="BookService" t="Include">
+            <e p="IBookService.cs" t="Include" />
+          </e>
+          <e p="CategoryService" t="Include">
+            <e p="ICategoryService.cs" t="Include" />
+          </e>
+          <e p="OrderService" t="Include">
+            <e p="IOrderService.cs" t="Include" />
+          </e>
+          <e p="ReviewService" t="Include" />
+          <e p="UserService" t="Include" />
+        </e>
+      </e>
+      <e p="BookStore.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
