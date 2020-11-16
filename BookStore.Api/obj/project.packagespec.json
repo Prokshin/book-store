@@ -15,7 +15,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\User\\RiderProjects\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
+            "projectPath": "C:\\Users\\User\\RiderProjects\\BookStore\\BookStore.Service\\BookStore.Service.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "bYo+sCqaI/zSDO+Z0AD3xVlRxRIgpxbvURkO1DVWA5EAUUOs3jn+XltffaRhDCH9PZtifNHQvUdk3sqPyRl14Q==",
+  "dgSpecHash": "B+Q9bK7LxkXshEPed8Hi0AvRKfc+z0cnZ8Fht+xUs07ICQ3+CN55+E41IF5xoF5G1I6upEqw5Nu8a8PFPb72dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\RiderProjects\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\npgsql\\5.0.0\\npgsql.5.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
   "logs": []
 }

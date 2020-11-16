@@ -30,6 +30,9 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="BookStore.Api.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="AuthorController.cs" t="Include" />
+          <e p="BookController.cs" t="Include" />
+          <e p="CategoryController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -44,6 +47,9 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="ViewModel" t="Include">
+          <e p="BookModel.cs" t="Include" />
+        </e>
         <e p="WeatherForecast.cs" t="Include" />
       </e>
       <e p="BookStore.Service" t="IncludeRecursive">
@@ -59,19 +65,24 @@
         </e>
         <e p="Services" t="Include">
           <e p="AuthorService" t="Include">
+            <e p="AuthorService.cs" t="Include" />
             <e p="IAuthorService.cs" t="Include" />
           </e>
           <e p="BookService" t="Include">
+            <e p="BookService.cs" t="Include" />
             <e p="IBookService.cs" t="Include" />
           </e>
           <e p="CategoryService" t="Include">
+            <e p="CategoryService.cs" t="Include" />
             <e p="ICategoryService.cs" t="Include" />
           </e>
           <e p="OrderService" t="Include">
             <e p="IOrderService.cs" t="Include" />
           </e>
           <e p="ReviewService" t="Include" />
-          <e p="UserService" t="Include" />
+          <e p="UserService" t="Include">
+            <e p="IUserService.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="BookStore.sln" t="IncludeFlat" />

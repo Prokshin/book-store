@@ -1,0 +1,9 @@
+C:\Users\User\RiderProjects\BookStore\BooksStore.Model\bin\Debug\netcoreapp3.1\BooksStore.Model.deps.json
+C:\Users\User\RiderProjects\BookStore\BooksStore.Model\bin\Debug\netcoreapp3.1\BooksStore.Model.dll
+C:\Users\User\RiderProjects\BookStore\BooksStore.Model\bin\Debug\netcoreapp3.1\BooksStore.Model.pdb
+C:\Users\User\RiderProjects\BookStore\BooksStore.Model\obj\Debug\netcoreapp3.1\BooksStore.Model.csprojAssemblyReference.cache
+C:\Users\User\RiderProjects\BookStore\BooksStore.Model\obj\Debug\netcoreapp3.1\BooksStore.Model.AssemblyInfoInputs.cache
+C:\Users\User\RiderProjects\BookStore\BooksStore.Model\obj\Debug\netcoreapp3.1\BooksStore.Model.AssemblyInfo.cs
+C:\Users\User\RiderProjects\BookStore\BooksStore.Model\obj\Debug\netcoreapp3.1\BooksStore.Model.csproj.CoreCompileInputs.cache
+C:\Users\User\RiderProjects\BookStore\BooksStore.Model\obj\Debug\netcoreapp3.1\BooksStore.Model.dll
+C:\Users\User\RiderProjects\BookStore\BooksStore.Model\obj\Debug\netcoreapp3.1\BooksStore.Model.pdb

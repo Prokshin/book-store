@@ -4,5 +4,9 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BookStore.Service\BookStore.Service.csproj" />
+    </ItemGroup>
+
 
 </Project>

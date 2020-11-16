@@ -1,0 +1,12 @@
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.deps.json
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.pdb
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BooksStore.Model.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BooksStore.Model.pdb
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csprojAssemblyReference.cache
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfoInputs.cache
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfo.cs
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CoreCompileInputs.cache
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CopyComplete
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.pdb
