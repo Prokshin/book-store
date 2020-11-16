@@ -3,6 +3,7 @@ using BookStore.Api.ViewModel;
 using BookStore.Service.Services.AuthorService;
 using BookStore.Service.Services.BookService;
 using BookStore.Service.Services.CategoryService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Api.Controllers
@@ -26,7 +27,7 @@ namespace BookStore.Api.Controllers
         {
             return Ok(_bookService.GetAllBooks());
         }
-
+        
         [HttpGet("/api/books/{id}")]
         public ActionResult GetBook(int id)
         {

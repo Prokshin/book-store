@@ -25,3 +25,11 @@ C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Book
 C:\Users\User\RiderProjects\BookStore\BookStore.Api\obj\Debug\netcoreapp3.1\BookStore.Api.csproj.CopyComplete
 C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Dapper.dll
 C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\RiderProjects\BookStore\BookStore.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
