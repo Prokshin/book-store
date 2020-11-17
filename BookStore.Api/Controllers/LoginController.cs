@@ -13,20 +13,18 @@ namespace BookStore.Api.Controllers
 {
     public class LoginController : ControllerBase
     {
-        // тестовые данные вместо использования базы данных
-        private List<User> people = new List<User>
-        {
-            new User
-            {
-                Email = "admin@gmail.com", Password = "12345", FirstName = "gg", LastName = "ff", Address = "sss"
-            },
-        };
-
         private readonly IUserService _userService;
 
         public LoginController(IUserService userService)
         {
             _userService = userService;
+        }
+
+        [HttpPost("/registration")]
+        public ActionResult Registration([FromBody] User user)
+        {
+            var id =_userService.CreateUser(user);
+            return Ok(new {id = id});
         }
 
         [HttpPost("/token")]

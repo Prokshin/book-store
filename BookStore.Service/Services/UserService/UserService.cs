@@ -10,7 +10,7 @@ namespace BookStore.Service.Services.UserService
     {
         public List<User> GetAllUsers()
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=test_gg;"))
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
                 var category = connection.Query<User>("SELECT * FROM users").ToList();
                 return category;
@@ -19,26 +19,38 @@ namespace BookStore.Service.Services.UserService
 
         public User GetUser(int id)
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=test_gg;"))
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
-                var category = connection.QueryFirstOrDefault<User>("SELECT * FROM users WHERE \"Id\" = @id", new {id});
+                var category = connection.QueryFirstOrDefault<User>("SELECT * FROM users WHERE id = @id", new {id});
                 return category;
             }
         }
 
         public User GetUserByEmail(string email)
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=test_gg;"))
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
-                var user = connection.QueryFirstOrDefault<User>("SELECT * FROM users WHERE \"Id\" = @email", new {email});
+                var user = connection.QueryFirstOrDefault<User>("SELECT * FROM users WHERE email = @email", new {email});
                 return user;
             }
         }
 
         public int CreateUser(User newUser)
         {
-            throw new System.NotImplementedException();
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
+            {
+                var id = connection.Execute("INSERT INTO users (\"Email\", \"Password\", \"FirstName\", \"LastName\", \"Address\") VALUES (@email, @password, @firstName, @lastName, @address) Returning(\"Id\")",
+                new {
+                   newUser.Email,
+                   newUser.Password,
+                   newUser.FirstName,
+                   newUser.LastName,
+                   newUser.Address
+                });
+                return id;
+            }
         }
+        
 
         public User UpdateUser(User updatedUser)
         {

@@ -8,9 +8,10 @@ namespace BookStore.Service.Services.BookService
 {
     public class BookService : IBookService
     {
+        
         public List<Book> GetAllBooks()
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=test_gg;"))
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
                 var books = connection.Query<Book>("SELECT * FROM books").ToList();
                 return books;
@@ -19,9 +20,9 @@ namespace BookStore.Service.Services.BookService
 
         public Book GetBook(int id)
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=test_gg;"))
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
-                var book = connection.QueryFirstOrDefault<Book>("SELECT * FROM books WHERE \"Id\" = @id", new {id});
+                var book = connection.QueryFirstOrDefault<Book>("SELECT * FROM books WHERE id = @id", new {id});
                 return book;
             }
         }

@@ -41,6 +41,8 @@ namespace BookStore.Api.Controllers
                     Id = book.Id,
                     Title = book.Title,
                     Description = book.Description,
+                    Quantity = book.Quantity,
+                    Price = book.Price,
                     Category = category,
                     Author = author
                 };
@@ -50,7 +52,7 @@ namespace BookStore.Api.Controllers
             {
                 return NotFound(new
                 {
-                    message = e.Message
+                    message = e.StackTrace
                 });
             }
         }

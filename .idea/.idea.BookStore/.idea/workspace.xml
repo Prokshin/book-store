@@ -11,6 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BookStore.Service/Services/UserService/UserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/441B1F1D-0007-4533-BF4B-294EFD4F790B/24/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/441B1F1D-0007-4533-BF4B-294EFD4F790B/4D/OkResult.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -23,33 +24,43 @@
         <option value="$PROJECT_DIR$/BooksStore.Model/Class1.cs" />
         <option value="$PROJECT_DIR$/BooksStore.Model/Author.cs" />
         <option value="$PROJECT_DIR$/BooksStore.Model/Category.cs" />
-        <option value="$PROJECT_DIR$/BooksStore.Model/Book.cs" />
         <option value="$PROJECT_DIR$/BookStore.Service/Services/BookService/IBookService.cs" />
         <option value="$PROJECT_DIR$/BookStore.Service/Services/AuthorService/IAuthorService.cs" />
         <option value="$PROJECT_DIR$/BookStore.Service/Services/CategoryService/ICategoryService.cs" />
         <option value="$PROJECT_DIR$/BooksStore.Model/OrderStatus.cs" />
-        <option value="$PROJECT_DIR$/BooksStore.Model/OrderItem.cs" />
         <option value="$PROJECT_DIR$/BookStore.Service/Services/OrderService/IOrderService.cs" />
         <option value="$PROJECT_DIR$/BooksStore.Model/User.cs" />
         <option value="$PROJECT_DIR$/BookStore.Service/Services/AuthorService/AuthoreService.cs" />
         <option value="$PROJECT_DIR$/BookStore.Api/Controllers/AuthorContollers.cs" />
         <option value="$PROJECT_DIR$/BookStore.Api/Controllers/AuthorControllers.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Api/Controllers/AuthorController.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Service/Services/AuthorService/AuthorService.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Service/Services/BookService/BookService.cs" />
-        <option value="$PROJECT_DIR$/BooksStore.Model/Order.cs" />
         <option value="$PROJECT_DIR$/BookStore.Api/ViewModel/AuthorModel.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Api/ViewModel/BookModel.cs" />
         <option value="$PROJECT_DIR$/BookStore.Api/Controllers/CategoryController.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Service/Services/CategoryService/CategoryService.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Api/AuthOptions.cs" />
         <option value="$PROJECT_DIR$/BookStore.Api/ViewModel/UserLoginModel.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Api/Startup.cs" />
         <option value="$PROJECT_DIR$/BookStore.Service/Services/UserService/IUserService.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Service/Services/UserService/UserService.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Api/Controllers/LoginController.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Api/Controllers/BookController.cs" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/BookStore.Api/Controllers/LoginController.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/ViewModel/UserRegisterModel.cs" />
+        <option value="$PROJECT_DIR$/BooksStore.Model/DBClass/books.cs" />
+        <option value="$PROJECT_DIR$/BooksStore.Model/DBClass/booksDB.cs" />
+        <option value="$PROJECT_DIR$/BooksStore.Model/DBClass/BooksDB.cs" />
+        <option value="$PROJECT_DIR$/BooksStore.Model/Mappers/BooksMapper.cs" />
+        <option value="$PROJECT_DIR$/BooksStore.Model/Book.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/ViewModel/BookModel.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/appsettings.json" />
+        <option value="$PROJECT_DIR$/BookStore.Api/ConnectionStrings.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/Controllers/AuthorController.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Service/Services/UserService/UserService.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Service/Services/BookService/BookService.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Service/Services/CategoryService/CategoryService.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/Controllers/BookController.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Service/Services/AuthorService/AuthorService.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/BooksStore.Model/Order.cs" />
+        <option value="$PROJECT_DIR$/BooksStore.Model/OrderItem.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/ViewModel/OrderCreateModel.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/Controllers/OrderController.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/AuthOptions.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Service/Services/OrderService/OrderService.cs" />
       </list>
     </option>
   </component>
@@ -59,12 +70,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BookStore.Api">
@@ -107,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605462487181</updated>
-      <workItem from="1605462490718" duration="17251000" />
+      <workItem from="1605462490718" duration="35059000" />
     </task>
     <servers />
   </component>
@@ -120,136 +133,262 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="379" key="GridCell.Tab.0.bottom" timestamp="1605531222261">
+    <state x="2776" y="171" key="#Inspection_severity" timestamp="1605591466360">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.0.center" timestamp="1605531222261">
+    <state x="2776" y="171" key="#Inspection_severity/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605591466360" />
+    <state x="2588" y="364" key="#SQL_Dialects" timestamp="1605620258123">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.0.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.0.left" timestamp="1605531222261">
+    <state x="2588" y="364" key="#SQL_Dialects/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620258123" />
+    <state x="2792" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605542154107">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.0.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.0.right" timestamp="1605531222261">
+    <state x="2792" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605542154107" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1605542022413">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.0.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.1.bottom" timestamp="1605531222261">
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605542022413" />
+    <state x="2012" y="93" width="2376" height="866" key="DiffContextDialog" timestamp="1605586915127">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.1.center" timestamp="1605531222261">
+    <state x="2012" y="93" width="2376" height="866" key="DiffContextDialog/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605586915127" />
+    <state width="2517" height="379" key="GridCell.Tab.0.bottom" timestamp="1605620355425">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.1.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.1.left" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355425" />
+    <state width="2517" height="379" key="GridCell.Tab.0.center" timestamp="1605620355425">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.1.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.1.right" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.0.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355425" />
+    <state width="2517" height="379" key="GridCell.Tab.0.left" timestamp="1605620355425">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.1.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.2.bottom" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.0.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355425" />
+    <state width="2517" height="379" key="GridCell.Tab.0.right" timestamp="1605620355425">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.2.center" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.0.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355425" />
+    <state width="2517" height="379" key="GridCell.Tab.1.bottom" timestamp="1605620359430">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.2.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.2.left" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620359430" />
+    <state width="2517" height="379" key="GridCell.Tab.1.center" timestamp="1605620359430">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.2.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.2.right" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.1.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620359430" />
+    <state width="2517" height="379" key="GridCell.Tab.1.left" timestamp="1605620359430">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.2.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.3.bottom" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.1.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620359430" />
+    <state width="2517" height="379" key="GridCell.Tab.1.right" timestamp="1605620359430">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.3.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.3.center" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.1.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620359430" />
+    <state width="2517" height="379" key="GridCell.Tab.2.bottom" timestamp="1605620355304">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.3.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.3.left" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.2.center" timestamp="1605620355304">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.3.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.3.right" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.2.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.2.left" timestamp="1605620355304">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.3.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.4.bottom" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.2.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.2.right" timestamp="1605620355304">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.4.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.4.center" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.2.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.3.bottom" timestamp="1605620355304">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.4.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.4.left" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.3.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.3.center" timestamp="1605620355304">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.4.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
-    <state width="2517" height="379" key="GridCell.Tab.4.right" timestamp="1605531222261">
+    <state width="2517" height="379" key="GridCell.Tab.3.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.3.left" timestamp="1605620355304">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.4.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605531222261" />
+    <state width="2517" height="379" key="GridCell.Tab.3.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.3.right" timestamp="1605620355304">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state width="2517" height="379" key="GridCell.Tab.3.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.4.bottom" timestamp="1605620355304">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state width="2517" height="379" key="GridCell.Tab.4.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.4.center" timestamp="1605620355304">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state width="2517" height="379" key="GridCell.Tab.4.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.4.left" timestamp="1605620355304">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state width="2517" height="379" key="GridCell.Tab.4.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="2517" height="379" key="GridCell.Tab.4.right" timestamp="1605620355304">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state width="2517" height="379" key="GridCell.Tab.4.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605620355304" />
+    <state width="196" height="455" key="HiddenNamespacesPopup" timestamp="1605549246517">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state width="196" height="455" key="HiddenNamespacesPopup/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605549246517" />
     <state x="2792" y="258" key="Rider.ProjectTemplateDialog.Size" timestamp="1605462794001">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
     <state x="2792" y="258" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605462794001" />
-    <state x="3024" y="227" key="RiderGenerateDialog" timestamp="1605528641060">
+    <state x="3024" y="227" key="RiderGenerateDialog" timestamp="1605540719550">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state x="3024" y="227" key="RiderGenerateDialog/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605528641060" />
+    <state x="3024" y="227" key="RiderGenerateDialog/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605540719550" />
+    <state x="2701" y="171" key="SettingsEditor" timestamp="1605542233631">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state x="2701" y="171" key="SettingsEditor/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605542233631" />
+    <state width="1288" height="533" key="XDebugger.FullValuePopup" timestamp="1605592039378">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state width="1288" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605592039378" />
+    <state x="3098" y="386" width="768" height="279" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605587417227">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state x="3098" y="386" width="768" height="279" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605587417227" />
+    <state x="3086" y="413" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605587010914">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state x="3086" y="413" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605587010914" />
+    <state x="2914" y="333" width="528" height="455" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1605592167802">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state x="2914" y="333" width="528" height="455" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605592167802" />
+    <state x="3058" y="194" width="756" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605621786916">
+      <screen x="1920" y="1" width="2560" height="1050" />
+    </state>
+    <state x="3058" y="194" width="756" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605621786916" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BookStore.Api/Controllers/LoginController.cs</url>
-          <line>34</line>
+          <line>32</line>
           <properties documentPath="C:\Users\User\RiderProjects\BookStore\BookStore.Api\Controllers\LoginController.cs" initialLine="25">
             <startOffsets>
-              <option value="988" />
+              <option value="900" />
             </startOffsets>
             <endOffsets>
-              <option value="1042" />
+              <option value="954" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BookStore.Api/Controllers/LoginController.cs</url>
-          <line>35</line>
+          <line>33</line>
           <properties documentPath="C:\Users\User\RiderProjects\BookStore\BookStore.Api\Controllers\LoginController.cs" initialLine="26">
             <startOffsets>
-              <option value="1055" />
+              <option value="967" />
             </startOffsets>
             <endOffsets>
-              <option value="1076" />
+              <option value="988" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BookStore.Api/Controllers/LoginController.cs</url>
-          <line>37</line>
+          <line>35</line>
           <properties documentPath="C:\Users\User\RiderProjects\BookStore\BookStore.Api\Controllers\LoginController.cs" initialLine="28">
             <startOffsets>
-              <option value="1107" />
+              <option value="1019" />
             </startOffsets>
             <endOffsets>
-              <option value="1176" />
+              <option value="1088" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BookStore.Api/Controllers/OrderController.cs</url>
+          <line>51</line>
+          <properties documentPath="C:\Users\User\RiderProjects\BookStore\BookStore.Api\Controllers\OrderController.cs" initialLine="40">
+            <startOffsets>
+              <option value="1655" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1668" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BookStore.Api/Controllers/OrderController.cs</url>
+          <line>40</line>
+          <properties documentPath="C:\Users\User\RiderProjects\BookStore\BookStore.Api\Controllers\OrderController.cs" initialLine="37">
+            <startOffsets>
+              <option value="1194" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1195" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BookStore.Api/Controllers/OrderController.cs</url>
+          <line>46</line>
+          <properties documentPath="C:\Users\User\RiderProjects\BookStore\BookStore.Api\Controllers\OrderController.cs" initialLine="46">
+            <startOffsets>
+              <option value="1498" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1642" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BookStore.Service/Services/OrderService/OrderService.cs</url>
+          <line>57</line>
+          <properties documentPath="C:\Users\User\RiderProjects\BookStore\BookStore.Service\Services\OrderService\OrderService.cs" initialLine="41">
+            <startOffsets>
+              <option value="2644" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2671" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BookStore.Service/Services/OrderService/OrderService.cs</url>
+          <line>43</line>
+          <properties documentPath="C:\Users\User\RiderProjects\BookStore\BookStore.Service\Services\OrderService\OrderService.cs" initialLine="43">
+            <startOffsets>
+              <option value="1859" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2030" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BookStore.Service/Services/OrderService/OrderService.cs</url>
+          <line>55</line>
+          <properties documentPath="C:\Users\User\RiderProjects\BookStore\BookStore.Service\Services\OrderService\OrderService.cs" initialLine="48">
+            <startOffsets>
+              <option value="2591" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2617" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

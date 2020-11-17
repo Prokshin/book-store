@@ -11,16 +11,16 @@ namespace BookStore.Service.Services.AuthorService
     {
         public List<Author> GetAllAuthors()
         {
-            using var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=test_gg;");
+            using var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;");
             var authors = connection.Query<Author>("SELECT * FROM authors").ToList();
             return authors;
         }
 
         public Author GetAuthor(int id)
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=test_gg;"))
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
-                var author = connection.QueryFirstOrDefault<Author>("SELECT * FROM authors WHERE \"Id\" = @id", new {id});
+                var author = connection.QueryFirstOrDefault<Author>("SELECT * FROM authors WHERE id = @id", new {id});
                 return author;
             }
         }

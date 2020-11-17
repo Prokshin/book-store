@@ -10,18 +10,18 @@ namespace BookStore.Service.Services.CategoryService
     {
         public List<Category> GetAllCategory()
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=test_gg;"))
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
-                var categories = connection.Query<Category>("SELECT * FROM category").ToList();
+                var categories = connection.Query<Category>("SELECT * FROM categories").ToList();
                 return categories;
             }
         }
 
         public Category GetCategory(int id)
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=test_gg;"))
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
-                var category = connection.QueryFirstOrDefault<Category>("SELECT * FROM category WHERE \"Id\" = @id", new {id});
+                var category = connection.QueryFirstOrDefault<Category>("SELECT * FROM categories WHERE id = @id", new {id});
                 return category;
             }
         }
