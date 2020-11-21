@@ -10,29 +10,43 @@ namespace BookStore.Service.Services.OrderService
     {
         public List<Order> GetAllUserOrders(int userId)
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
+            using (var connection =
+                new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
-                var orders = connection.Query<Order>("SELECT * FROM orders WHERE \"userId\" = @userId", new {userId}).ToList();
-               // orders.ForEach( order in orders)
-               foreach (var order in orders)
-               {
-                   var orderItems =
-                       connection.Query<OrderItem>("SELECT * FROM \"ordersItem\" Where \"orderId\" = @orderId",
-                           new {orderId = order.Id}).ToList();
-                   order.OrderItems = orderItems;
-               }
-               return orders;;
+                var orders = connection.Query<Order>("SELECT * FROM orders WHERE \"userId\" = @userId", new {userId})
+                    .ToList();
+
+                foreach (var order in orders)
+                {
+                    var orderItems =
+                        connection.Query<OrderItem>(
+                            "SELECT * FROM \"ordersItem\" Where \"orderId\" = @orderId",
+                            new {orderId = order.Id}
+                        ).ToList();
+
+                    order.OrderItems = orderItems;
+                }
+
+                return orders;
+                ;
             }
         }
 
         public Order GetOrder(int id)
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
+            using (var connection =
+                new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
-                var order = connection.QueryFirstOrDefault<Order>("SELECT * FROM orders WHERE id = @id", new {id});
-                // orders.ForEach( order in orders)
-                var orderItems = connection.Query<OrderItem>("SELECT * FROM \"ordersItem\" Where \"orderId\" = @orderId", 
-                    new {orderId = order.Id}).ToList();
+                var order = connection.QueryFirstOrDefault<Order>(
+                    "SELECT * FROM orders WHERE id = @id",
+                    new {id}
+                );
+
+                var orderItems = connection.Query<OrderItem>(
+                    "SELECT * FROM \"ordersItem\" Where \"orderId\" = @orderId",
+                    new {orderId = order.Id}
+                ).ToList();
+
                 order.OrderItems = orderItems;
                 return order;
             }
@@ -40,18 +54,20 @@ namespace BookStore.Service.Services.OrderService
 
         public string CreateOrder(Order newOrder)
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
+            using (var connection =
+                new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
                 var orderId = connection.QueryFirst<int>(
-                    "INSERT INTO orders (\"userId\") VALUES (@userId) RETURNING id", 
+                    "INSERT INTO orders (\"userId\") VALUES (@userId) RETURNING id",
                     new {newOrder.UserId});
 
                 foreach (var item in newOrder.OrderItems)
                 {
                     connection.Execute(
                         "INSERT INTO \"ordersItem\" (\"orderId\", \"bookId\", quantity) VALUES (@orderId, @bookId, @quantity)",
-                        new { orderId, item.BookId, item.Quantity });
+                        new {orderId, item.BookId, item.Quantity});
                 }
+
                 return orderId.ToString();
             }
         }

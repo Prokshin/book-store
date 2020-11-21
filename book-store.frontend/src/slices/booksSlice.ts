@@ -8,22 +8,7 @@ interface IBookSliceState {
 }
 
 const initialState: IBookSliceState = {
-	books: [
-		{
-			id: 1,
-			title: "Чапаев и Пустоиа",
-			price: 220,
-			category: {
-				id: 1,
-				name: 'Современная проза'
-			},
-			author: {
-				id: 1,
-				firstName: "Виктор",
-				lastName: 'Пелевин'
-			}
-		}
-	],
+	books: [],
 	loading: false
 }
 
@@ -31,7 +16,13 @@ export const bookSlice = createSlice({
 	name: 'test',
 	initialState,
 	reducers: {
-
+		fetchBooksRequest: (state) => {
+			state.loading = true;
+		},
+		fetchBooksSuccess: (state, action) => {
+			state.books = action.payload;
+			state.loading = false;
+		}
 	}
 })
 

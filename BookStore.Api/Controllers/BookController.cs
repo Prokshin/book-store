@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using BookStore.Api.ViewModel;
 using BookStore.Service.Services.AuthorService;
 using BookStore.Service.Services.BookService;
@@ -25,7 +26,25 @@ namespace BookStore.Api.Controllers
         [HttpGet("/api/books")]
         public ActionResult GetAllBooks()
         {
-            return Ok(_bookService.GetAllBooks());
+            var books = _bookService.GetAllBooks();
+            List<BookModel> booksM = new List<BookModel>();
+            foreach (var book in books)
+            {
+                var category = _categoryService.GetCategory(book.CategoryId);
+                var author = _authorService.GetAuthor(book.AuthorId);
+                var bookModel = new BookModel()
+                {
+                    Id = book.Id,
+                    Title = book.Title,
+                    Description = book.Description,
+                    Quantity = book.Quantity,
+                    Price = book.Price,
+                    Category = category,
+                    Author = author
+                };
+                booksM.Add(bookModel);
+            }
+            return Ok(booksM);
         }
         
         [HttpGet("/api/books/{id}")]

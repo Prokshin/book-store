@@ -36,6 +36,15 @@ namespace BookStore.Api.Controllers
         }
         
         [Authorize]
+        [HttpGet("/api/orders/{id}/detail")]
+        public ActionResult GetOrderDetail(int id)
+        {
+            // var userId = int.Parse(User.FindFirst("id").Value);
+            var order = _orderService.GetOrder(id);
+            return Ok();
+        }
+        
+        [Authorize]
         [HttpPost("/api/orders/")]
         public ActionResult CreateOrder([FromBody] OrderCreateModel gg )
         {
