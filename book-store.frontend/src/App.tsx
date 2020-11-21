@@ -1,26 +1,65 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import 'toasted-notes/src/styles.css';
+import 'bulma/css/bulma.min.css'
+import {Menu} from './components/menu/Menu';
+
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+} from "react-router-dom";
+import {HomePage} from './pages/HomePage';
+import {AboutPage} from './pages/AboutPage';
+import {BasketPage} from './pages/BasketPage';
+import {OrderPage} from './pages/OrderPage';
+import {LoginPage} from './pages/LoginPage';
+import {RegistrationPage} from './pages/RegistarationPage';
+import {OrderListPage} from './pages/OrderListPage';
+import {UserPage} from './pages/UserPage';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	return (
+		<Router>
+			<div>
+				<Menu/>
+				<section className="section">
+					<div className="container">
+						<Switch>
+							<Route path="/orders" exact>
+								<OrderListPage/>
+							</Route>
+							<Route path="/orders/:id">
+								<OrderPage/>
+							</Route>
+							<Route path="/basket">
+								<BasketPage/>
+							</Route>
+							<Route path="/about">
+								<AboutPage/>
+							</Route>
+							<Route path="/login" exact>
+								<LoginPage/>
+							</Route>
+							<Route path="/registration" exact>
+								<RegistrationPage/>
+							</Route>
+							<Route path="/profile" exact>
+								<UserPage/>
+							</Route>
+
+							<Route path="/" exact>
+								<HomePage/>
+							</Route>
+						</Switch>
+					</div>
+				</section>
+			</div>
+
+		</Router>
+	);
 }
 
 export default App;
