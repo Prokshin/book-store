@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
+import {useDispatch} from 'react-redux';
+import {actions} from '../../slices/basketSlice';
 
 interface IBooksItemProps {
 	id: number;
@@ -7,10 +9,22 @@ interface IBooksItemProps {
 	price: number;
 	authorName?: string;
 	categoryName?: string;
+	addToBasket?: any
+	checkBasket: any
+
 }
 
 export const BooksItem: React.FC<IBooksItemProps> = (props) => {
-	const {id, title, description, price, authorName, categoryName} = props;
+	const {id, title, description, price, authorName, categoryName, addToBasket, checkBasket} = props
+
+	const dispatch = useDispatch();
+
+	const count = checkBasket(id)
+
+	const changeCountHandler = (n: number) => {
+		dispatch(actions.addCount({id, count: count + n}))
+	}
+
 	return (
 		<div className="column is-6">
 			<div className="card">
@@ -42,9 +56,23 @@ export const BooksItem: React.FC<IBooksItemProps> = (props) => {
 						</span>
 					</p>
 					<p className="card-footer-item">
-								  <span>
-									  <button className="button is-text title is-size-4 has-text-primary">В корзину</button>
-								  </span>
+						<span>
+							{
+								count === 0
+									? <button
+										className="button is-text title is-size-4 has-text-primary"
+										onClick={addToBasket}
+									>
+										В корзину
+									</button>
+									: <>
+										<button className="button  title is-size-6 is-danger" onClick={() => changeCountHandler(-1)}>-</button>
+										<span className="title mr-4 ml-4">{count}</span>
+										<button className="button  title is-size-6 is-success" onClick={() => changeCountHandler(1)}>+</button>
+									</>
+							}
+
+						</span>
 					</p>
 				</footer>
 			</div>

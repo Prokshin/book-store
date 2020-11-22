@@ -1,17 +1,24 @@
 import React from 'react';
+import {useSelector} from 'react-redux';
+import {getUser} from '../selectors/userSelector';
 
 export const UserPage = () => {
+	const user = useSelector(getUser)
 	return (
 		<>
 			<section className="hero is-medium is-dark is-bold">
 				<div className="hero-body">
 					<div className="container">
 						<h1 className="title">
-							Иванов Иван
+							{`${user?.firstName} ${user?.lastName}`}
 						</h1>
 						<h2 className="subtitle">
-							ivanov@mail.ru
+							{user?.email}
 						</h2>
+						<h2 className="subtitle">
+							{user?.address}
+						</h2>
+						<button className='button is-danger'>Выйти из системы</button>
 					</div>
 				</div>
 			</section>

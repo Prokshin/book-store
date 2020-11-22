@@ -12,6 +12,7 @@ import booksSliceReducer from './slices/booksSlice';
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from './core/rootSaga';
 import userSliceReducer from './slices/userSlice';
+import basketSliceReducer from './slices/basketSlice';
 
 
 export const sagaMiddleware = createSagaMiddleware()
@@ -20,7 +21,8 @@ export const store = configureStore({
 	middleware: [...getDefaultMiddleware(), sagaMiddleware],
 	reducer: {
 		books: booksSliceReducer,
-		user: userSliceReducer
+		user: userSliceReducer,
+		basket: basketSliceReducer
 	}
 })
 

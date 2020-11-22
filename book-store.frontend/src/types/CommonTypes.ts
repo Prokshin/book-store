@@ -27,3 +27,11 @@ export type User = {
 	email: string;
 	address: string;
 }
+
+export type Basket = {
+	list: {
+		book: Book;
+		count: number;
+	}[]
+	price: number
+}

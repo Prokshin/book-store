@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import {useSelector} from 'react-redux';
-import {getIsLogin} from '../../selectors/userSelector';
+import {useDispatch, useSelector} from 'react-redux';
+import {getIsLogin, getUser} from '../../selectors/userSelector';
+import {actions} from '../../slices/userSlice';
 
 
 export const Menu: React.FC = () => {
+	const dispatch = useDispatch();
 
 	const isLogin = useSelector(getIsLogin);
+	const user = useSelector(getUser)
 
+	useEffect(() => {
+		if(isLogin) dispatch(actions.fetchUserRequest(''))
+	}, [dispatch, isLogin])
 	// const isLogin = false;
 	return (
 		<nav className="navbar is-max-desktop" role="navigation" aria-label="main navigation">
@@ -50,7 +56,7 @@ export const Menu: React.FC = () => {
 											<span className="icon">
 												<i className="fas fa-user"/>
 											</span>
-											<span>Иванов Иван</span>
+											<span>{`${user?.firstName} ${user?.lastName}`}</span>
 										</Link>
 										: <>
 											<Link to="/registration" className="button is-primary">

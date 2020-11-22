@@ -35,7 +35,11 @@ export const userSlice = createSlice({
 			state.user = null;
 			state.isLogin = false;
 			state.loading = false;
-		}
+		},
+		fetchUserRequest: (state, action) => {},
+		fetchUserSuccess: ((state, action) => {
+			state.user = action.payload;
+		})
 	}
 })
 

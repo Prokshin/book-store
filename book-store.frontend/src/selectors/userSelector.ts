@@ -1,7 +1,8 @@
 import {RootState} from '../index';
 import {createSelector} from '@reduxjs/toolkit';
 
-const books = (state:RootState) => state.user;
+const user = (state:RootState) => state.user;
 
-export const getIsLogin = createSelector(books, data => data.isLogin);
+export const getIsLogin = createSelector(user, data => data.isLogin);
+export const getUser = createSelector(user, data => data.user)
 // export const getIsLoadingSelector = createSelector(books, data => data.loading);
