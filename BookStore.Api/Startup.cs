@@ -36,7 +36,7 @@ namespace BookStore.Api
         {
             services.AddControllers();
             services.Configure<ConnectionStrings>(Configuration.GetSection("ConnectionStrings"));
-            
+
 
             services.AddOptions();
             services.Configure<string>(Configuration);
@@ -83,11 +83,17 @@ namespace BookStore.Api
 
             app.UseHttpsRedirection();
 
-            app.UseCors(bulder => bulder.AllowAnyOrigin());
+            app.UseCors(builder =>
+                {
+                    builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                }
+            );
 
-            
+
             app.UseRouting();
-            
+
             app.UseAuthentication();
             app.UseAuthorization();
 
