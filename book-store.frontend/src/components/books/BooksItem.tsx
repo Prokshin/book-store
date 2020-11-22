@@ -32,14 +32,14 @@ export const BooksItem: React.FC<IBooksItemProps> = (props) => {
 				</div>
 				<footer className="card-footer">
 					<p className="card-footer-item">
-								  <span>
-									<h1 className="is-size-3 title">
-										{price}
-										<span className="icon is-medium is-size-4">
-											<i className="fas fa-ruble-sign"/>
-										</span>
-									</h1>
-								  </span>
+						<span>
+							<span className="is-size-3 title">
+								{price}
+								<span className="icon is-medium is-size-4">
+									<i className="fas fa-ruble-sign"/>
+								</span>
+							</span>
+						</span>
 					</p>
 					<p className="card-footer-item">
 								  <span>

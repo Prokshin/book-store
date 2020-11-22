@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 // import './App.css';
 import 'toasted-notes/src/styles.css';
 import 'bulma/css/bulma.min.css'
@@ -17,10 +17,16 @@ import {LoginPage} from './pages/LoginPage';
 import {RegistrationPage} from './pages/RegistarationPage';
 import {OrderListPage} from './pages/OrderListPage';
 import {UserPage} from './pages/UserPage';
+import {useDispatch} from 'react-redux';
+import {actions} from './slices/userSlice';
 
 
 function App() {
-
+	const dispatch = useDispatch();
+	useEffect(() => {
+		console.log('dsfsd')
+		dispatch(actions.checkLocalStorage(''))
+	}, [])
 	return (
 		<Router>
 			<div>

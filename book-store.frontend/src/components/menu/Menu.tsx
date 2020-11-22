@@ -1,9 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {useSelector} from 'react-redux';
+import {getIsLogin} from '../../selectors/userSelector';
 
 
 export const Menu: React.FC = () => {
-	const isLogin = false;
+
+	const isLogin = useSelector(getIsLogin);
+
+	// const isLogin = false;
 	return (
 		<nav className="navbar is-max-desktop" role="navigation" aria-label="main navigation">
 			<div className="container is-widescreen">

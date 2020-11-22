@@ -11,7 +11,6 @@ export const BooksList = () => {
 	const isLoading = useSelector(getIsLoadingSelector);
 
 	useEffect(() => {
-		console.log(12)
 		dispatch(actions.fetchBooksRequest());
 	}, [dispatch])
 	return (
@@ -21,6 +20,7 @@ export const BooksList = () => {
 				{
 					books?.map(book => (
 						<BooksItem
+							key={book.id}
 							id={book.id}
 							title={book.title}
 							description={book.description || ''}

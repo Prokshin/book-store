@@ -11,6 +11,7 @@ import {configureStore, createSlice, getDefaultMiddleware, PayloadAction} from '
 import booksSliceReducer from './slices/booksSlice';
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from './core/rootSaga';
+import userSliceReducer from './slices/userSlice';
 
 
 export const sagaMiddleware = createSagaMiddleware()
@@ -18,7 +19,8 @@ export const sagaMiddleware = createSagaMiddleware()
 export const store = configureStore({
 	middleware: [...getDefaultMiddleware(), sagaMiddleware],
 	reducer: {
-		books: booksSliceReducer
+		books: booksSliceReducer,
+		user: userSliceReducer
 	}
 })
 
