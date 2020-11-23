@@ -1,8 +1,9 @@
 import axios from 'axios';
-import {Order, OrderDetail, User} from '../types/CommonTypes';
+import {Order, OrderDetail, orderStatus, User} from '../types/CommonTypes';
 
 const defaultHeaders = {
-	Authorization: `Bearer ${localStorage.getItem('token')}`
+	Authorization: `Bearer ${localStorage.getItem('token')}`,
+	'Content-Type': 'application/json'
 }
 
 
@@ -53,5 +54,16 @@ export const getOrderDetail = async (id: string): Promise<OrderDetail> => {
 		headers: {...defaultHeaders}
 	})
 	console.log(res.data)
+	return res.data
+}
+
+export const updateOrderStatus = async (id: number, status: orderStatus): Promise<number> => {
+	const res = await axios({
+		url: `https://localhost:5001/api/orders/${id}`,
+		method: 'PATCH',
+		headers: {...defaultHeaders},
+		data:  JSON.stringify({"status":status})
+	})
+
 	return res.data
 }

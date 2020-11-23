@@ -31,6 +31,9 @@ export const orderSlice = createSlice({
 		fetchOrderDetailSuccess: (state, action) => {
 			state.selectedOrder = action.payload;
 			state.loading = false;
+		},
+		updateOrderStatus: (state, action) => {
+			state.loading = true;
 		}
 	}
 })
