@@ -83,7 +83,7 @@ namespace BookStore.Api.Controllers
             return Ok(res);
         }
 
-        [Authorize]
+        
         [HttpPost("/api/orders/")]
         public ActionResult CreateOrder([FromBody] OrderCreateModel gg)
         {

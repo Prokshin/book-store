@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fff1852f-1c70-4745-b071-b1edcf673e7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BookStore/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookStore/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BookStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookStore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/Controllers/BookController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore.Api/Controllers/OrderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/Controllers/OrderController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/ViewModel/OrderCreateModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/ViewModel/OrderCreateModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/bin/Debug/netcoreapp3.1/BookStore.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/bin/Debug/netcoreapp3.1/BookStore.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/bin/Debug/netcoreapp3.1/BookStore.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/bin/Debug/netcoreapp3.1/BookStore.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/bin/Debug/netcoreapp3.1/BookStore.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/bin/Debug/netcoreapp3.1/BookStore.Service.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/bin/Debug/netcoreapp3.1/BookStore.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/bin/Debug/netcoreapp3.1/BookStore.Service.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/obj/Debug/netcoreapp3.1/BookStore.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/obj/Debug/netcoreapp3.1/BookStore.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/obj/Debug/netcoreapp3.1/BookStore.Api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/obj/Debug/netcoreapp3.1/BookStore.Api.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/obj/Debug/netcoreapp3.1/BookStore.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/obj/Debug/netcoreapp3.1/BookStore.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Api/obj/Debug/netcoreapp3.1/BookStore.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Api/obj/Debug/netcoreapp3.1/BookStore.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Service/Services/OrderService/IOrderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Service/Services/OrderService/IOrderService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Service/Services/OrderService/OrderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Service/Services/OrderService/OrderService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Service/bin/Debug/netcoreapp3.1/BookStore.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Service/bin/Debug/netcoreapp3.1/BookStore.Service.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Service/bin/Debug/netcoreapp3.1/BookStore.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Service/bin/Debug/netcoreapp3.1/BookStore.Service.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Service/obj/Debug/netcoreapp3.1/BookStore.Service.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Service/obj/Debug/netcoreapp3.1/BookStore.Service.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Service/obj/Debug/netcoreapp3.1/BookStore.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Service/obj/Debug/netcoreapp3.1/BookStore.Service.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore.Service/obj/Debug/netcoreapp3.1/BookStore.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore.Service/obj/Debug/netcoreapp3.1/BookStore.Service.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-store.frontend/src/dataProvider/booksDataContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-store.frontend/src/dataProvider/booksDataContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-store.frontend/src/pages/BasketPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/book-store.frontend/src/pages/BasketPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-store.frontend/src/pages/OrderPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/book-store.frontend/src/pages/OrderPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-store.frontend/src/sagas/ordersSaga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-store.frontend/src/sagas/ordersSaga.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-store.frontend/src/slices/orderSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-store.frontend/src/slices/orderSlice.ts" afterDir="false" />
@@ -89,8 +72,8 @@
         <option value="$PROJECT_DIR$/BookStore.Api/ViewModel/OrderDetailModel..cs" />
         <option value="$PROJECT_DIR$/BookStore.Service/Services/OrderService/IOrderService.cs" />
         <option value="$PROJECT_DIR$/BookStore.Api/ViewModel/OrderCreateModel.cs" />
-        <option value="$PROJECT_DIR$/BookStore.Api/Controllers/OrderController.cs" />
         <option value="$PROJECT_DIR$/BookStore.Service/Services/OrderService/OrderService.cs" />
+        <option value="$PROJECT_DIR$/BookStore.Api/Controllers/OrderController.cs" />
       </list>
     </option>
   </component>
@@ -151,7 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605462487181</updated>
       <workItem from="1605462490718" duration="38686000" />
-      <workItem from="1605985544965" duration="12410000" />
+      <workItem from="1605985544965" duration="15204000" />
     </task>
     <servers />
   </component>
@@ -184,22 +167,22 @@
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
     <state x="2012" y="93" width="2376" height="866" key="DiffContextDialog/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1605586915127" />
-    <state width="2517" height="379" key="GridCell.Tab.0.bottom" timestamp="1606113654302">
+    <state width="2517" height="284" key="GridCell.Tab.0.bottom" timestamp="1606113946654">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1606113654302" />
-    <state width="2517" height="379" key="GridCell.Tab.0.center" timestamp="1606113654302">
+    <state width="2517" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1606113946654" />
+    <state width="2517" height="284" key="GridCell.Tab.0.center" timestamp="1606113946654">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.0.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1606113654302" />
-    <state width="2517" height="379" key="GridCell.Tab.0.left" timestamp="1606113654302">
+    <state width="2517" height="284" key="GridCell.Tab.0.center/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1606113946654" />
+    <state width="2517" height="284" key="GridCell.Tab.0.left" timestamp="1606113946653">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.0.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1606113654302" />
-    <state width="2517" height="379" key="GridCell.Tab.0.right" timestamp="1606113654302">
+    <state width="2517" height="284" key="GridCell.Tab.0.left/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1606113946653" />
+    <state width="2517" height="284" key="GridCell.Tab.0.right" timestamp="1606113946654">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
-    <state width="2517" height="379" key="GridCell.Tab.0.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1606113654302" />
+    <state width="2517" height="284" key="GridCell.Tab.0.right/0.0.1920.1050/1920.1.2560.1050@1920.1.2560.1050" timestamp="1606113946654" />
     <state width="2517" height="379" key="GridCell.Tab.1.bottom" timestamp="1606113654303">
       <screen x="1920" y="1" width="2560" height="1050" />
     </state>
