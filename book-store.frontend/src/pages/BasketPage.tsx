@@ -2,15 +2,21 @@ import React, {ChangeEvent} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {getBasketSelector} from '../selectors/basketSelector';
 import {actions} from '../slices/basketSlice';
+import {actions as orderActions} from '../slices/orderSlice'
 import {BasketItem} from '../components/basket/BasketItem';
+import { useHistory } from 'react-router-dom';
 
 export const BasketPage = () => {
 	const dispatch = useDispatch();
-
+	const history = useHistory();
 	const basket = useSelector(getBasketSelector)
 
 	const changeCountHandler = (count: number, id: number) => {
 		dispatch(actions.addCount({id, count}))
+	}
+
+	const createOrder = () => {
+		dispatch(orderActions.createOrder({history}))
 	}
 
 	return (
@@ -44,7 +50,7 @@ export const BasketPage = () => {
 					</table>
 						<div className="columns">
 							<div className="column is-4 is-offset-8 has-text-right">
-								<button className=" button is-success">
+								<button className=" button is-success" onClick={createOrder}>
 									Оформить заказ
 								</button>
 							</div>

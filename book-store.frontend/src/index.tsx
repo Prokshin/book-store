@@ -49,8 +49,8 @@ axios.interceptors.response.use(function (response) {
 	return response;
 }, function (error) {
 	if (401 === error.response.status) {
-		console.log('fddf')
-		dispatch(actions.loginError(''));
+
+		// dispatch(actions.loginError(''));
 	} else {
 		return Promise.reject(error);
 	}

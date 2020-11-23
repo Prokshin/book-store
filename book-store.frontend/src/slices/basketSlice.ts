@@ -35,21 +35,19 @@ export const basketSlice = createSlice({
 		},
 		addCount: (state, action) => {
 			const {id, count} = action.payload;
-			console.log(id, count)
+
 			const bookIndex = state.basket.list.findIndex(el => id === el.book.id)
-			console.log(bookIndex)
 			if(bookIndex !== -1){
-				console.log('g')
-				if(count === 0 ) {
-					console.log('q')
-					state.basket.list.splice(bookIndex, 1)
-				}
-				else {
-					console.log('w')
-					state.basket.list[bookIndex].count = count;
-				}
+				if(count === 0 ) state.basket.list.splice(bookIndex, 1)
+				else state.basket.list[bookIndex].count = count;
 			}
 			state.basket.price = state.basket.list.reduce((acc, r) => acc + r.book.price * r.count ,0)
+		},
+		clearBasket: state => {
+			state.basket = {
+				list: [],
+				price: 0
+			};
 		}
 	}
 })

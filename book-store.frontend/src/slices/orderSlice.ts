@@ -34,6 +34,9 @@ export const orderSlice = createSlice({
 		},
 		updateOrderStatus: (state, action) => {
 			state.loading = true;
+		},
+		createOrder: (state, action) => {
+			state.loading = true;
 		}
 	}
 })

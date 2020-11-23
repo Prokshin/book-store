@@ -22,7 +22,6 @@ export const userSlice = createSlice({
 			state.loading = true;
 		},
 		loginSuccess: (state, action) => {
-			console.log('sdfsdasaaaaaaaaaaaaaaaaa')
 			state.isLogin = true;
 			state.loading = false;
 		},

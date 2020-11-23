@@ -24,7 +24,6 @@ import {actions} from './slices/userSlice';
 function App() {
 	const dispatch = useDispatch();
 	useEffect(() => {
-		console.log('dsfsd')
 		dispatch(actions.checkLocalStorage(''))
 	}, [])
 	return (

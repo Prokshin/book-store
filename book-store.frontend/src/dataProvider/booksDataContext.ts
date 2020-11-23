@@ -7,7 +7,6 @@ const defaultHeaders = {
 }
 
 
-
 export const getAllbooks = async (): Promise<any> => {
 	const res = await axios({
 		url: 'https://localhost:5001/api/books',
@@ -53,7 +52,6 @@ export const getOrderDetail = async (id: string): Promise<OrderDetail> => {
 		method: 'GET',
 		headers: {...defaultHeaders}
 	})
-	console.log(res.data)
 	return res.data
 }
 
@@ -62,8 +60,22 @@ export const updateOrderStatus = async (id: number, status: orderStatus): Promis
 		url: `https://localhost:5001/api/orders/${id}`,
 		method: 'PATCH',
 		headers: {...defaultHeaders},
-		data:  JSON.stringify({"status":status})
+		data: JSON.stringify({"status": status})
 	})
 
 	return res.data
+}
+
+export const createOrder = async (userId: number, items: {bookId: number, quantity: number}[]): Promise<number> => {
+	const res = await axios({
+		url: 'https://localhost:5001/api/orders/',
+		method: 'POST',
+		data: {
+				userId: userId,
+				items: items.map(item => ({bookId: item.bookId, quantity: item.quantity}))
+			},
+		headers: {...defaultHeaders}
+	})
+
+	return res.data;
 }
