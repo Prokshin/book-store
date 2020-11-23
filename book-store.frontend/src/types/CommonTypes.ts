@@ -35,3 +35,20 @@ export type Basket = {
 	}[]
 	price: number
 }
+
+export enum orderStatus {
+	New,
+	Processing,
+	Paid,
+	Success
+}
+
+export type Order = {
+	id: number;
+	status: orderStatus;
+	orderItems: {
+		bookId: number,
+		quantity: number
+	}[],
+	created: Date
+}

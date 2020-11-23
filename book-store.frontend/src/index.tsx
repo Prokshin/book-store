@@ -11,8 +11,10 @@ import {configureStore, createSlice, getDefaultMiddleware, PayloadAction} from '
 import booksSliceReducer from './slices/booksSlice';
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from './core/rootSaga';
-import userSliceReducer from './slices/userSlice';
+import userSliceReducer, {actions} from './slices/userSlice';
 import basketSliceReducer from './slices/basketSlice';
+import {orderSlice} from './slices/orderSlice';
+import axios from 'axios';
 
 
 export const sagaMiddleware = createSagaMiddleware()
@@ -22,7 +24,8 @@ export const store = configureStore({
 	reducer: {
 		books: booksSliceReducer,
 		user: userSliceReducer,
-		basket: basketSliceReducer
+		basket: basketSliceReducer,
+		order: orderSlice.reducer
 	}
 })
 
@@ -39,6 +42,19 @@ ReactDOM.render(
 
 
 sagaMiddleware.run(rootSaga)
+
+const {dispatch} = store;
+
+axios.interceptors.response.use(function (response) {
+	return response;
+}, function (error) {
+	if (401 === error.response.status) {
+		console.log('fddf')
+		dispatch(actions.loginError(''));
+	} else {
+		return Promise.reject(error);
+	}
+});
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

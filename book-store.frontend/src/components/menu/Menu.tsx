@@ -12,7 +12,7 @@ export const Menu: React.FC = () => {
 	const user = useSelector(getUser)
 
 	useEffect(() => {
-		if(isLogin) dispatch(actions.fetchUserRequest(''))
+		if (isLogin) dispatch(actions.fetchUserRequest(''))
 	}, [dispatch, isLogin])
 	// const isLogin = false;
 	return (
@@ -56,7 +56,16 @@ export const Menu: React.FC = () => {
 											<span className="icon">
 												<i className="fas fa-user"/>
 											</span>
-											<span>{`${user?.firstName} ${user?.lastName}`}</span>
+											<span>
+												{
+													user
+														? `${user.firstName} ${user.lastName}`
+														: <span className="icon">
+															<i className="fas fa-circle-notch fa-spin"></i>
+														</span>
+
+												}
+											</span>
 										</Link>
 										: <>
 											<Link to="/registration" className="button is-primary">

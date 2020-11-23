@@ -1,9 +1,16 @@
 import React from 'react';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {getUser} from '../selectors/userSelector';
+import {actions} from '../slices/userSlice';
 
 export const UserPage = () => {
-	const user = useSelector(getUser)
+	const dispatch = useDispatch();
+
+	const user = useSelector(getUser);
+
+	const exit = () => {
+		dispatch(actions.loginError(''))
+	}
 	return (
 		<>
 			<section className="hero is-medium is-dark is-bold">
@@ -18,7 +25,7 @@ export const UserPage = () => {
 						<h2 className="subtitle">
 							{user?.address}
 						</h2>
-						<button className='button is-danger'>Выйти из системы</button>
+						<button className='button is-danger' onClick={exit}>Выйти из системы</button>
 					</div>
 				</div>
 			</section>

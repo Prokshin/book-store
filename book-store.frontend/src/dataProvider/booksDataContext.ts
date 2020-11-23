@@ -1,9 +1,10 @@
 import axios from 'axios';
-import {User} from '../types/CommonTypes';
+import {Order, User} from '../types/CommonTypes';
 
 const defaultHeaders = {
 	Authorization: `Bearer ${localStorage.getItem('token')}`
 }
+
 
 
 export const getAllbooks = async (): Promise<any> => {
@@ -32,4 +33,15 @@ export const getUser = async (): Promise<User> => {
 	})
 
 	return res.data;
+}
+
+
+export const getOrders = async (): Promise<Order[]> => {
+	const res = await axios({
+		url: 'https://localhost:5001/api/orders/',
+		method: 'GET',
+		headers: {...defaultHeaders}
+	})
+
+	return res.data
 }

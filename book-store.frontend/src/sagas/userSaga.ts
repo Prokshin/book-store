@@ -9,8 +9,10 @@ function delay(ms: number) {
 
 export function* userSaga() {
 	yield takeEvery(actions.loginRequest, _login);
+	yield takeLatest(actions.loginError, _clearLoginInfo);
 	yield takeEvery(actions.checkLocalStorage, _checkLocalStorage);
 	yield takeEvery(actions.fetchUserRequest, _fetchUser)
+
 }
 
 function* _fetchUser() {
@@ -26,9 +28,8 @@ function* _fetchUser() {
 function* _login(action: any) {
 	try {
 		const data = yield call(getToken, action.payload);
-		localStorage.setItem('token', data.access_token);
-		yield put(actions.loginSuccess(''));
-		yield put(actions.fetchUserRequest(''))
+		yield localStorage.setItem('token', data.access_token);
+		yield document.location.assign('/');
 	} catch {
 		yield put(actions.loginError(''))
 
@@ -42,6 +43,15 @@ function* _checkLocalStorage() {
 			yield put(actions.loginSuccess(''))
 		}
 	} catch (e) {
+
+	}
+}
+
+function* _clearLoginInfo() {
+	try {
+		yield localStorage.removeItem('token');
+		yield document.location.assign('/');
+	}catch (e){
 
 	}
 }
