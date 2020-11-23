@@ -23,7 +23,6 @@ namespace BookStore.Api.Controllers
             _authorService = authorService;
         }
 
-        [Authorize]
         [HttpGet("/api/books")]
         public ActionResult GetAllBooks()
         {

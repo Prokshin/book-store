@@ -13,4 +13,9 @@ namespace BookStore.Api.ViewModel
         public int BookId { get; set; }
         public int Quantity { get; set; }
     }
+
+    public class OrderUpdateModel
+    {
+        public int Status { get; set; }
+    }
 }

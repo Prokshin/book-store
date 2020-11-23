@@ -8,6 +8,6 @@ namespace BookStore.Service.Services.OrderService
         public List<Order> GetAllUserOrders(int userId);
         public Order GetOrder(int id);
         public string CreateOrder(Order newOrder);
-        public Order UpdateOrder(Order updatedOrder);
+        public int UpdateOrder(int id, int status);
     }
 }

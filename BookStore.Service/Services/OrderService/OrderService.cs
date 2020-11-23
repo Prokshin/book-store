@@ -72,9 +72,18 @@ namespace BookStore.Service.Services.OrderService
             }
         }
 
-        public Order UpdateOrder(Order updatedOrder)
+        public int UpdateOrder(int id, int status)
         {
-            throw new System.NotImplementedException();
+            using (var connection =
+                new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
+            {
+                var orderId = connection.QueryFirst<int>(
+                    "UPDATE orders SET status = @status WHERE id = @id RETURNING id",
+                    new { status, id});
+                
+
+                return orderId;
+            }
         }
     }
 }

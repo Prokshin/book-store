@@ -39,6 +39,7 @@
           <e p="CategoryController.cs" t="Include" />
           <e p="LoginController.cs" t="Include" />
           <e p="OrderController.cs" t="Include" />
+          <e p="UserController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -56,6 +57,7 @@
         <e p="ViewModel" t="Include">
           <e p="BookModel.cs" t="Include" />
           <e p="OrderCreateModel.cs" t="Include" />
+          <e p="OrderDetailModel..cs" t="Include" />
           <e p="UserLoginModel.cs" t="Include" />
           <e p="UserRegisterModel.cs" t="Include" />
         </e>
