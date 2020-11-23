@@ -1,49 +1,50 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import { useParams } from 'react-router-dom';
+import {useDispatch, useSelector} from 'react-redux';
+import {actions} from '../slices/orderSlice';
+import {getOrderDetailSelector} from '../selectors/ordersSelector';
+import {OrderItem} from '../components/order/OrderItem';
 
 
 export const OrderPage = () => {
+	let {id} = useParams<any>();
+	const dispatch = useDispatch();
+	// console.log(p)
+	const order = useSelector(getOrderDetailSelector);
+
+	useEffect(()=>{
+		dispatch(actions.fetchOrderDetailRequest({id: parseInt(id)}))
+	},[])
+
+	if(!order) return null;
 	return (
 		<div className="columns">
-
 			<div className="column ">
 				<div className="card">
 					<header className="card-header">
-						<p className="card-header-title is-size-4">Заказ номер: 1234</p>
+						<p className="card-header-title is-size-4">Заказ номер: {order.id}</p>
 					</header>
 					<div className="card-content">
 						<table className="table is-fullwidth">
 							<thead>
 							<tr>
-								<td>Название книги</td>
-								<td className="has-text-right">Количество</td>
-								<td className="has-text-right">стоимость</td>
+								<th>Название книги</th>
+								<th className="has-text-right">Количество</th>
+								<th className="has-text-right">стоимость</th>
 							</tr>
 							</thead>
 							<tbody>
-							<tr>
-								<td>
-									<h3 className="is-size-5">Чапаев и пустота</h3>
-									<p className="has-text-grey-light">Виктор Пелевин</p>
-									<p className="has-text-grey-light">Современная проза</p>
-								</td>
-								<td className="has-text-right">2</td>
-								<td className="has-text-right">400</td>
-							</tr>
-							<tr>
-								<td>
-									<h3 className="is-size-5">Хроники заводной птицы</h3>
-									<p className="has-text-grey-light">Харуки Мураками</p>
-									<p className="has-text-grey-light">Современная проза</p>
-								</td>
-								<td className="has-text-right">1</td>
-								<td className="has-text-right">500</td>
-							</tr>
+							{
+								order.orderItems.map(orderItem => (
+									<OrderItem orderItem={orderItem}/>
+								))
+							}
 							</tbody>
 							<tfoot>
 							<tr className="is-size-5">
 								<td>Итог</td>
-								<td/>
-								<td className="has-text-right">1300</td>
+								<td className="has-text-right">{order.orderItems.reduce((acc, r)=> acc + r.quantity,0)}</td>
+								<td className="has-text-right">{order.orderItems.reduce((acc, r)=> acc + r.book.price * r.quantity, 0)}</td>
 							</tr>
 							</tfoot>
 						</table>

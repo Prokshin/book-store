@@ -5,3 +5,5 @@ const orders = (state:RootState) => state.order;
 
 export const getOrderSelector = createSelector(orders, data => data.orders);
 export const getIsLoadingSelector = createSelector(orders, data => data.loading);
+
+export const getOrderDetailSelector = createSelector(orders, data => data.selectedOrder);

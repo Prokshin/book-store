@@ -21,7 +21,7 @@ export const OrderListPage = () => {
 				{
 					orders.map(order => (
 						<div className="column is-6">
-							<Link to='orders/1'>
+							<Link to={`orders/${order.id}`}>
 								<div className="card">
 									<header className="card-header">
 										<p className="card-header-title level">

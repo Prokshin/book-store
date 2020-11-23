@@ -1,14 +1,23 @@
 import {call, put, takeEvery, takeLatest} from 'redux-saga/effects'
 import {actions} from '../slices/orderSlice';
-import {getAllbooks, getOrders, getToken, getUser} from '../dataProvider/booksDataContext';
+import {getAllbooks, getOrderDetail, getOrders, getToken, getUser} from '../dataProvider/booksDataContext';
+import {PayloadAction} from '@reduxjs/toolkit';
 
 function delay(ms: number) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-
 export function* ordersSaga() {
 	yield takeEvery(actions.fetchOrdersRequest, _fetchOrders);
+	yield takeEvery(actions.fetchOrderDetailRequest, _fetchDetailOrder)
+}
+
+function* _fetchDetailOrder({payload}: PayloadAction<any>) {
+	try {
+		const order = yield call(getOrderDetail, payload.id)
+		yield put(actions.fetchOrderDetailSuccess(order));
+	} catch (e) {
+	}
 }
 
 function* _fetchOrders() {

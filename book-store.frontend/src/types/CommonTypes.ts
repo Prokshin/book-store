@@ -52,3 +52,15 @@ export type Order = {
 	}[],
 	created: Date
 }
+
+export type OrderDetailItem = {
+	id: number;
+	quantity: number;
+	book: Book;
+}
+export type OrderDetail = {
+	id: number;
+	status: orderStatus;
+	orderItems: OrderDetailItem[]
+	created: Date
+}
