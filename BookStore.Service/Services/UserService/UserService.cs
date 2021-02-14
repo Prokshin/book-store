@@ -39,7 +39,7 @@ namespace BookStore.Service.Services.UserService
         {
             using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
             {
-                var id = connection.Execute("INSERT INTO users (\"Email\", \"Password\", \"FirstName\", \"LastName\", \"Address\") VALUES (@email, @password, @firstName, @lastName, @address) Returning(\"Id\")",
+                var id = connection.Execute("INSERT INTO users (\"email\", \"password\", \"firstName\", \"lastName\", \"address\") VALUES (@email, @password, @firstName, @lastName, @address) Returning(\"id\")",
                 new {
                    newUser.Email,
                    newUser.Password,

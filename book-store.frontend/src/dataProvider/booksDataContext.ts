@@ -25,6 +25,15 @@ export const getToken = async (data: { email: string, password: string }): Promi
 	return res.data
 }
 
+export const registration = async (data: { email: string, password: string, firstName: string, lastName: string, address: string }): Promise<any> => {
+	const res = await axios({
+		url: 'https://localhost:5001/registration',
+		method: 'POST',
+		data: data
+	})
+	return res.data
+}
+
 export const getUser = async (): Promise<User> => {
 	const res = await axios({
 		url: 'https://localhost:5001/api/user/current',
