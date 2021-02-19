@@ -11,5 +11,6 @@ namespace BookStore.Service.Services.BookService
         public List<Book> GetBookByAuthor(int authorId);
         public string CreateBook(Book book);
         public Book UpdateBook(Book newBook);
+        public int ChangeBookQuantity(int id);
     }
 }

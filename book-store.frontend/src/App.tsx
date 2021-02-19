@@ -19,17 +19,19 @@ import {OrderListPage} from './pages/OrderListPage';
 import {UserPage} from './pages/UserPage';
 import {useDispatch} from 'react-redux';
 import {actions} from './slices/userSlice';
+import {Toaster} from 'react-hot-toast';
 
 
 function App() {
 	const dispatch = useDispatch();
 	useEffect(() => {
 		dispatch(actions.checkLocalStorage(''))
-	}, [])
+	}, [dispatch])
 	return (
 		<Router>
 			<div>
 				<Menu/>
+				<Toaster />
 				<section className="section">
 					<div className="container">
 						<Switch>

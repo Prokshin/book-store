@@ -1,6 +1,7 @@
 import {call, put, takeEvery, takeLatest} from 'redux-saga/effects'
 import {actions} from '../slices/userSlice';
 import {getAllbooks, getToken, getUser} from '../dataProvider/booksDataContext';
+import {toast} from 'react-hot-toast';
 
 function delay(ms: number) {
 	return new Promise(resolve => setTimeout(resolve, ms));
@@ -28,8 +29,17 @@ function* _fetchUser() {
 function* _login(action: any) {
 	try {
 		const data = yield call(getToken, action.payload);
-		yield localStorage.setItem('token', data.access_token);
-		yield document.location.assign('/');
+
+		if(data){
+			yield localStorage.setItem('token', data.access_token);
+			yield document.location.assign('/');
+		}
+		else {
+			toast.error('Непавильный email или пароль')
+			// yield put(actions.loginError(''))
+
+		}
+
 	} catch {
 		yield put(actions.loginError(''))
 
@@ -50,7 +60,7 @@ function* _checkLocalStorage() {
 function* _clearLoginInfo() {
 	try {
 		yield localStorage.removeItem('token');
-		yield document.location.assign('/');
+		// yield document.location.assign('/');
 	}catch (e){
 
 	}

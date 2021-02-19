@@ -11,6 +11,7 @@ export function* booksSaga() {
 }
 
 function* _fetchBooks() {
+	console.log('olk')
 	try {
 		const books = yield call(getAllbooks);
 		yield put(actions.fetchBooksSuccess(books));

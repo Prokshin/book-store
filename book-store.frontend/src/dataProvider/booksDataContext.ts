@@ -1,11 +1,24 @@
 import axios from 'axios';
 import {Order, OrderDetail, orderStatus, User} from '../types/CommonTypes';
+import {toast} from 'react-hot-toast';
+
 
 const defaultHeaders = {
 	Authorization: `Bearer ${localStorage.getItem('token')}`,
 	'Content-Type': 'application/json'
 }
 
+axios.interceptors.response.use(response => {
+	return response;
+}, error => {
+	if (error.response.status === 401) {
+		localStorage.removeItem('token')
+	}
+	if (error.response.status === 400) {
+		toast.error('ошибка, попробуйте повоторить запрос')
+	}
+	return error;
+});
 
 export const getAllbooks = async (): Promise<any> => {
 	const res = await axios({
@@ -34,14 +47,18 @@ export const registration = async (data: { email: string, password: string, firs
 	return res.data
 }
 
-export const getUser = async (): Promise<User> => {
-	const res = await axios({
-		url: 'https://localhost:5001/api/user/current',
-		method: 'GET',
-		headers: {...defaultHeaders}
-	})
-
-	return res.data;
+export const getUser = async (): Promise<User | undefined> => {
+	try {
+		const res = await axios({
+			url: 'https://localhost:5001/api/user/current',
+			method: 'GET',
+			headers: {...defaultHeaders}
+		})
+		return res.data;
+	}
+	catch (e){
+		console.log(e)
+	}
 }
 
 

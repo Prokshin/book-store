@@ -28,6 +28,7 @@ export const store = configureStore({
 		order: orderSlice.reducer
 	}
 })
+sagaMiddleware.run(rootSaga)
 
 export type RootState = ReturnType<typeof store.getState>
 
@@ -41,20 +42,7 @@ ReactDOM.render(
 );
 
 
-sagaMiddleware.run(rootSaga)
 
-const {dispatch} = store;
-
-axios.interceptors.response.use(function (response) {
-	return response;
-}, function (error) {
-	if (401 === error.response.status) {
-
-		// dispatch(actions.loginError(''));
-	} else {
-		return Promise.reject(error);
-	}
-});
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

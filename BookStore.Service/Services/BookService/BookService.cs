@@ -27,6 +27,15 @@ namespace BookStore.Service.Services.BookService
             }
         }
 
+        public int ChangeBookQuantity(int id)
+        {
+            using (var connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=solardev;Password=solar123;Database=books;"))
+            {
+                var quantity = connection.Execute("UPDATE books SET quantity = quantity-1 WHERE id = @id", new {id});
+                return quantity;
+            }
+        }
+
         public List<Book> GetBookByCategory(int categoryId)
         {
             throw new System.NotImplementedException();

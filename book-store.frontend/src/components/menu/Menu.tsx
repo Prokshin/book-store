@@ -30,9 +30,11 @@ export const Menu: React.FC = () => {
 							Книги
 						</Link>
 
-						<Link to='/orders' className="navbar-item">
-							Заказы
-						</Link>
+						{isLogin &&
+							<Link to='/orders' className="navbar-item">
+								Заказы
+							</Link>
+						}
 
 						<Link to='/about' className="navbar-item">
 							о нас

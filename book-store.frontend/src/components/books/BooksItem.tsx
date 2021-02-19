@@ -9,13 +9,14 @@ interface IBooksItemProps {
 	price: number;
 	authorName?: string;
 	categoryName?: string;
-	addToBasket?: any
-	checkBasket: any
+	addToBasket?: any;
+	checkBasket: any;
+	quantity: number;
 
 }
 
 export const BooksItem: React.FC<IBooksItemProps> = (props) => {
-	const {id, title, description, price, authorName, categoryName, addToBasket, checkBasket} = props
+	const {id, title, description, price, quantity, authorName, categoryName, addToBasket, checkBasket} = props
 
 	const dispatch = useDispatch();
 
@@ -42,9 +43,10 @@ export const BooksItem: React.FC<IBooksItemProps> = (props) => {
 						{description}
 					</p>
 
-
+					<div className="mt-5">Осталось штук: {quantity}</div>
 				</div>
 				<footer className="card-footer">
+
 					<p className="card-footer-item">
 						<span>
 							<span className="is-size-3 title">

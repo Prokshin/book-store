@@ -6,12 +6,14 @@ interface IUserSliceState {
 	user: User | null;
 	isLogin: boolean;
 	loading: boolean;
+	isError: boolean;
 }
 
 const initialState: IUserSliceState = {
 	user: null,
 	isLogin: false,
-	loading: false
+	loading: false,
+	isError: false,
 }
 
 export const userSlice = createSlice({
@@ -28,8 +30,13 @@ export const userSlice = createSlice({
 		loginError: (state, action) => {
 			state.isLogin = false;
 			state.loading = false;
+			state.isError = true;
 		},
-		checkLocalStorage: (state, action) => {},
+		hideError: state => {
+			state.isError = false;
+		},
+		checkLocalStorage: (state, action) => {
+		},
 		resetLogin: (state, action) => {
 			state.user = null;
 			state.isLogin = false;

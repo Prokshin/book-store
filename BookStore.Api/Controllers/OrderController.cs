@@ -93,6 +93,13 @@ namespace BookStore.Api.Controllers
             var items = gg.Items.Select(item => new OrderItem {BookId = item.BookId, Quantity = item.Quantity})
                 .ToList();
 
+            for (int i = 0; i < gg.Items.Count; i++)
+            {
+                _bookService.ChangeBookQuantity(gg.Items[i].BookId);
+            }
+            
+            
+            
             var f = _orderService.CreateOrder(new Order
             {
                 UserId = gg.UserId,

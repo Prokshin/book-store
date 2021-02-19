@@ -5,6 +5,9 @@ import {actions} from '../slices/basketSlice';
 import {actions as orderActions} from '../slices/orderSlice'
 import {BasketItem} from '../components/basket/BasketItem';
 import { useHistory } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast';
+
+const notify = () => toast.error('Для заказа вам необходимо авторизироваться');
 
 export const BasketPage = () => {
 	const dispatch = useDispatch();
@@ -15,12 +18,18 @@ export const BasketPage = () => {
 		dispatch(actions.addCount({id, count}))
 	}
 
+
+
 	const createOrder = () => {
-		dispatch(orderActions.createOrder({history}))
+		if(localStorage.getItem('token')) {
+			dispatch(orderActions.createOrder({history}))
+		}
+		else notify()
 	}
 
 	return (
 		<>
+			<Toaster />
 			<h1 className="title is-size-2">Корзина</h1>
 			{
 				basket.list?.length

@@ -9,6 +9,7 @@ export const UserPage = () => {
 	const user = useSelector(getUser);
 
 	const exit = () => {
+		document.location.assign('/login');
 		dispatch(actions.loginError(''))
 	}
 	return (

@@ -1,12 +1,22 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {BooksList} from '../components/books/BooksList';
+import {useDispatch} from 'react-redux';
+import {actions} from '../slices/userSlice';
+import Select from 'react-select';
 
 const F = [
 	'Найдётся не всё',
 	'just don\'t do it',
 ]
 
-export const HomePage = () => {
+export const HomePage = React.memo(() => {
+	const dispatch = useDispatch();
+	useEffect(()=>{
+		dispatch(actions.checkLocalStorage(''))
+
+	},[])
+
+
 	return (
 		<>
 			<section className="hero is-dark is-medium mb-6">
@@ -29,4 +39,4 @@ export const HomePage = () => {
 			</section>
 		</>
 	)
-}
+})

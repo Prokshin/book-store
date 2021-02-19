@@ -5,6 +5,7 @@ export type Book = {
 	category?: Category;
 	author?: Author;
 	price: number;
+	quantity: number
 }
 
 export type Category = {
